@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Business - Budget Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="top-header">
+
+        <div class="logo-area">
+
+            <img
+                src="logo.png"
+                alt="Budget Tracker Logo"
+            >
+
+        </div>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                🏠 Home
+            </a>
+
+            <a href="table.html">
+                📊 Table
+            </a>
+
+            <a href="market.html">
+                🛒 Market
+            </a>
+
+            <a href="business.html" class="active">
+                💼 Business
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="business-section">
+
+            <h2>💼 Business</h2>
+
+            <p>
+                Manage your business, products and income.
+            </p>
+
+
+            <div class="business-cards">
+
+                <div class="business-card">
+
+                    <h3>💰 Today's Sales</h3>
+
+                    <p>
+                        KSh <span id="todaySales">0</span>
+                    </p>
+
+                </div>
+
+
+                <div class="business-card">
+
+                    <h3>📈 Products</h3>
+
+                    <p>
+                        <span id="productCount">0</span>
+                    </p>
+
+                </div>
+
+
+                <div class="business-card">
+
+                    <h3>💵 Total Expenses</h3>
+
+                    <p>
+                        KSh <span id="businessExpenses">0</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <h3 class="business-title">
+                📦 Products in Market
+            </h3>
+
+
+            <div
+                class="business-products"
+                id="businessProducts"
+            >
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

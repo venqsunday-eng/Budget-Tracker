@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Market - Budget Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="top-header">
+
+        <div class="logo-area">
+
+            <img src="logo.png" alt="Budget Tracker Logo">
+
+        </div>
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                🏠 Home
+            </a>
+
+            <a href="table.html">
+                📊 Table
+            </a>
+
+            <a href="market.html" class="active">
+                🛒 Market
+            </a>
+
+            <a href="business.html">
+                💼 Business
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="market-section">
+
+            <h2>🛒 Market</h2>
+
+            <p>Add your products below.</p>
+
+
+            <table class="market-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Image</th>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Payment Number</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="productsContainer">
+
+                    <tr id="inputRow">
+
+                        <td class="image-cell">
+
+                            <label
+                                class="image-upload"
+                                onclick="document.getElementById('productImage').click()"
+                            >
+
+                                <img
+                                    id="imagePreview"
+                                    src=""
+                                    alt="Product Image"
+                                >
+
+                                <span id="imageText">
+                                    📷 Choose Image
+                                </span>
+
+                            </label>
+
+
+                            <input
+                                type="file"
+                                id="productImage"
+                                accept="image/*"
+                                hidden
+                            >
+
+                        </td>
+
+
+                        <td>
+
+                            <input
+                                type="text"
+                                id="productName"
+                                placeholder="Product name"
+                            >
+
+                        </td>
+
+
+                        <td>
+
+                            <input
+                                type="number"
+                                id="productPrice"
+                                placeholder="Price"
+                            >
+
+                        </td>
+
+
+                        <td>
+
+                            <input
+                                type="text"
+                                id="paymentNumber"
+                                placeholder="Payment number"
+                            >
+
+                        </td>
+
+
+                        <td>
+
+                            <button id="addProductButton">
+                                ADD
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
